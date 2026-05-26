@@ -1,0 +1,47 @@
+{
+  "name": "huint",
+  "version": "0.1.0",
+  "description": "Connect Codex to Huint's hosted MCP for exact-location photo task operations.",
+  "author": {
+    "name": "Huint",
+    "url": "https://mcp.huint.io"
+  },
+  "homepage": "https://mcp.huint.io",
+  "repository": "https://github.com/JDavisxu/huint-codex-plugin",
+  "keywords": [
+    "huint",
+    "mcp",
+    "codex",
+    "photo-tasks",
+    "oauth",
+    "supabase"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Huint",
+    "shortDescription": "Create and review exact-location photo tasks.",
+    "longDescription": "Connect Codex to Huint's hosted MCP server with Supabase OAuth. Verify the live connection, resolve real places, create exact-GPS photo tasks, inspect operator-scoped work, and review tasker photo submissions with prompt-gated mutation tools.",
+    "developerName": "Huint",
+    "category": "Productivity",
+    "capabilities": [
+      "MCP",
+      "OAuth",
+      "Location resolution",
+      "Photo task operations",
+      "Submission review"
+    ],
+    "websiteURL": "https://mcp.huint.io",
+    "brandColor": "#E67319",
+    "composerIcon": "assets/icon.svg",
+    "logo": "assets/logo.svg",
+    "screenshots": [
+      "assets/screenshot-home.png"
+    ],
+    "defaultPrompt": [
+      "Check my Huint MCP connection.",
+      "Resolve this address for a Huint photo task.",
+      "List pending Huint submissions for review."
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}

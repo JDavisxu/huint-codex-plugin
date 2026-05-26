@@ -1,0 +1,20 @@
+{
+  "name": "huint",
+  "interface": {
+    "displayName": "Huint"
+  },
+  "plugins": [
+    {
+      "name": "huint",
+      "source": {
+        "source": "local",
+        "path": "./plugins/huint"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

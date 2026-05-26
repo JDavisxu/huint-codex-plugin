@@ -1,0 +1,55 @@
+{
+  "mcpServers": {
+    "huint": {
+      "type": "http",
+      "url": "https://mcp.huint.io/mcp",
+      "description": "Production Huint MCP over Streamable HTTP with Supabase OAuth.",
+      "enabled": true,
+      "default_tools_approval_mode": "prompt",
+      "tools": {
+        "get_connection_status": {
+          "approval_mode": "approve"
+        },
+        "get_capabilities": {
+          "approval_mode": "approve"
+        },
+        "resolve_location": {
+          "approval_mode": "approve"
+        },
+        "reverse_geocode": {
+          "approval_mode": "approve"
+        },
+        "get_task_status": {
+          "approval_mode": "approve"
+        },
+        "list_my_tasks": {
+          "approval_mode": "approve"
+        },
+        "list_pending_reviews": {
+          "approval_mode": "approve"
+        },
+        "get_task_submissions": {
+          "approval_mode": "approve"
+        },
+        "get_submission_image": {
+          "approval_mode": "prompt"
+        },
+        "get_submission_images": {
+          "approval_mode": "prompt"
+        },
+        "create_task": {
+          "approval_mode": "prompt"
+        },
+        "cancel_task": {
+          "approval_mode": "prompt"
+        },
+        "accept_submission": {
+          "approval_mode": "prompt"
+        },
+        "reject_submission": {
+          "approval_mode": "prompt"
+        }
+      }
+    }
+  }
+}
