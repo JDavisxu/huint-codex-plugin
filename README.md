@@ -22,18 +22,22 @@ For the smallest checkout, use sparse paths:
 codex plugin marketplace add JDavisxu/huint-codex-plugin --ref main --sparse .agents/plugins --sparse plugins/huint
 ```
 
-The marketplace marks Huint as `INSTALLED_BY_DEFAULT`, so Codex should install
-and enable the plugin from the marketplace entry. Restart Codex after adding or
-upgrading the marketplace so the bundled MCP server is loaded into the next
-session.
+Then install from the Codex plugin UI:
 
-If you are testing a local checkout or an older Codex build, install explicitly:
+```text
+/plugin -> Huint marketplace -> Huint -> Install -> approve OAuth
+```
+
+The install step starts the Huint OAuth approval flow. Approve it in the browser;
+Codex stores the OAuth credential and loads the hosted MCP server. No Huint API
+key is required for Codex.
+
+For re-auth or CLI-only testing, use:
 
 ```bash
 codex plugin add huint@huint
+codex mcp login huint --scopes openid,profile,email
 ```
-
-Then complete OAuth when prompted.
 
 Public setup docs live at:
 
