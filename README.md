@@ -41,10 +41,14 @@ Check my Huint MCP connection.
 
 Codex should call `get_connection_status` and return `ok: true`.
 
+For OpenAI API or agent workflows that use a Huint API key directly, run the
+read-only example in `examples/openai-connection-check`.
+
 ## Contents
 
 ```text
 .agents/plugins/marketplace.json
+examples/openai-connection-check/
 plugins/huint/
 ```
 

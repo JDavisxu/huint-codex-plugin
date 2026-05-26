@@ -29,6 +29,10 @@ and the agent playbook.
 
 Public setup docs live at `https://huint.io/docs`.
 
+OpenAI API and agent builders who use Huint API keys directly can verify their
+connection with the read-only example at
+`examples/openai-connection-check` in this repository.
+
 ## Codex QA Checklist
 
 Run this checklist before publishing a plugin update:
