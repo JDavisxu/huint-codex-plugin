@@ -6,7 +6,7 @@
     "name": "Huint",
     "url": "https://mcp.huint.io"
   },
-  "homepage": "https://mcp.huint.io",
+  "homepage": "https://huint.io/docs",
   "repository": "https://github.com/JDavisxu/huint-codex-plugin",
   "keywords": [
     "huint",
@@ -30,7 +30,7 @@
       "Photo task operations",
       "Submission review"
     ],
-    "websiteURL": "https://mcp.huint.io",
+    "websiteURL": "https://huint.io/docs",
     "brandColor": "#E67319",
     "composerIcon": "assets/icon.svg",
     "logo": "assets/logo.svg",

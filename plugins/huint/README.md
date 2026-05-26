@@ -27,6 +27,8 @@ This plugin connects Codex to Huint's hosted MCP server at
 domain reference for spec version, policy, rejection codes, cancellation rules,
 and the agent playbook.
 
+Public setup docs live at `https://huint.io/docs`.
+
 ## Codex QA Checklist
 
 Run this checklist before publishing a plugin update:

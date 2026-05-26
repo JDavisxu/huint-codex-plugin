@@ -25,6 +25,12 @@ codex plugin marketplace add JDavisxu/huint-codex-plugin --ref main --sparse .ag
 Then open Codex Plugins, select the Huint marketplace, install **Huint**, and
 complete OAuth when prompted.
 
+Public setup docs live at:
+
+```text
+https://huint.io/docs
+```
+
 ## Verify
 
 In a Codex session, ask:
