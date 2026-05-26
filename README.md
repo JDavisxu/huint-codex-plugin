@@ -10,6 +10,15 @@ https://mcp.huint.io/mcp
 
 ## Install
 
+Step 1 is a Huint operator account. Create or sign into one at:
+
+```text
+https://portal.huint.io/login
+```
+
+If you start from Codex instead, the OAuth browser flow will take you through
+sign in, sign up, and username setup before the final approval screen.
+
 Add this marketplace to Codex:
 
 ```bash
@@ -28,15 +37,16 @@ Then install from the Codex plugin UI:
 /plugin -> Huint marketplace -> Huint -> Install -> approve OAuth
 ```
 
-The install step starts the Huint OAuth approval flow. Approve it in the browser;
-Codex stores the OAuth credential and loads the hosted MCP server. No Huint API
-key is required for Codex.
+The install step starts the Huint OAuth approval flow. Sign into or create your
+Huint operator account, complete username setup if prompted, then approve the
+connection. Codex stores the OAuth credential and loads the hosted MCP server.
+No Huint API key is required for Codex.
 
 For re-auth or CLI-only testing, use:
 
 ```bash
 codex plugin add huint@huint
-codex mcp login huint --scopes openid,profile,email
+codex mcp login huint --scopes openid,email
 ```
 
 Public setup docs live at:

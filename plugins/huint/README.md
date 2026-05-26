@@ -15,15 +15,18 @@ This plugin connects Codex to Huint's hosted MCP server at
 
 ## Normal Workflow
 
-1. Add the Huint marketplace with
+1. Create or sign into a Huint operator account at
+   `https://portal.huint.io/login`. If you start from Codex instead, the OAuth
+   browser flow will take you through sign in, sign up, and username setup.
+2. Add the Huint marketplace with
    `codex plugin marketplace add JDavisxu/huint-codex-plugin --ref main`.
-2. Open `/plugin`, select Huint from the Huint marketplace, and choose Install.
-3. Approve the browser OAuth prompt. No Huint API key is required for Codex.
-4. Ask Codex: `Check my Huint MCP connection.`
-5. Confirm `codex mcp list` includes `huint` as an enabled OAuth server.
-6. For task creation, resolve the location first, then create the task with the
+3. Open `/plugin`, select Huint from the Huint marketplace, and choose Install.
+4. Approve the browser OAuth prompt. No Huint API key is required for Codex.
+5. Ask Codex: `Check my Huint MCP connection.`
+6. Confirm `codex mcp list` includes `huint` as an enabled OAuth server.
+7. For task creation, resolve the location first, then create the task with the
    resolver payload unchanged.
-7. For review, list pending reviews, fetch metadata/images, then explicitly
+8. For review, list pending reviews, fetch metadata/images, then explicitly
    confirm accept or reject.
 
 `get_capabilities` is not required for MCP tool discovery. It is Huint's live
@@ -40,17 +43,18 @@ connection with the read-only example at
 
 Run this checklist before publishing a plugin update:
 
-1. Fresh install from `/plugin` after adding the marketplace entry.
-2. OAuth approval completes without asking for API secrets.
-3. `get_connection_status` returns `ok: true`.
-4. `get_capabilities` returns the expected `spec_version`.
-5. Read-only tools are available without mutation prompts.
-6. `create_task`, `cancel_task`, `accept_submission`, and `reject_submission`
+1. Create or sign into a Huint operator account.
+2. Fresh install from `/plugin` after adding the marketplace entry.
+3. OAuth approval completes without asking for API secrets.
+4. `get_connection_status` returns `ok: true`.
+5. `get_capabilities` returns the expected `spec_version`.
+6. Read-only tools are available without mutation prompts.
+7. `create_task`, `cancel_task`, `accept_submission`, and `reject_submission`
    prompt before execution.
-7. Expired/disconnected OAuth can be fixed with
-   `codex mcp login huint --scopes openid,profile,email`, then
+8. Expired/disconnected OAuth can be fixed with
+   `codex mcp login huint --scopes openid,email`, then
    `get_connection_status`.
-8. Disable/re-enable the plugin and confirm the MCP server reloads.
+9. Disable/re-enable the plugin and confirm the MCP server reloads.
 
 ## References
 
