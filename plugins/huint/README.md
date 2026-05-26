@@ -41,3 +41,10 @@ Run this checklist before publishing a plugin update:
 7. Expired/disconnected OAuth can be fixed with re-auth, then
    `get_connection_status`.
 8. Disable/re-enable the plugin and confirm the MCP server reloads.
+
+## References
+
+- Codex plugin marketplace and manifest docs:
+  https://developers.openai.com/codex/plugins/build
+- Codex MCP setup:
+  https://developers.openai.com/codex/mcp

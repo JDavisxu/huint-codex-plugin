@@ -16,6 +16,12 @@ Add this marketplace to Codex:
 codex plugin marketplace add JDavisxu/huint-codex-plugin --ref main
 ```
 
+For the smallest checkout, use sparse paths:
+
+```bash
+codex plugin marketplace add JDavisxu/huint-codex-plugin --ref main --sparse .agents/plugins --sparse plugins/huint
+```
+
 Then open Codex Plugins, select the Huint marketplace, install **Huint**, and
 complete OAuth when prompted.
 
@@ -45,3 +51,10 @@ schemas through MCP.
 
 The hosted MCP server and Huint product code live in the main Huint repository.
 This repository intentionally contains only the Codex plugin marketplace package.
+
+## References
+
+- Codex plugin marketplaces and Git-backed installs:
+  https://developers.openai.com/codex/plugins/build
+- Codex MCP configuration:
+  https://developers.openai.com/codex/mcp
