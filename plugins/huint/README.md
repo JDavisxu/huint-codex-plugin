@@ -15,12 +15,14 @@ This plugin connects Codex to Huint's hosted MCP server at
 
 ## Normal Workflow
 
-1. Install and enable the Huint plugin.
+1. Add or upgrade the Huint marketplace, then restart Codex so the bundled MCP
+   server loads into the next session.
 2. Complete OAuth when Codex prompts for Huint MCP authentication.
 3. Ask Codex: `Check my Huint MCP connection.`
-4. For task creation, resolve the location first, then create the task with the
+4. Confirm `codex mcp list` includes `huint` as an enabled OAuth server.
+5. For task creation, resolve the location first, then create the task with the
    resolver payload unchanged.
-5. For review, list pending reviews, fetch metadata/images, then explicitly
+6. For review, list pending reviews, fetch metadata/images, then explicitly
    confirm accept or reject.
 
 `get_capabilities` is not required for MCP tool discovery. It is Huint's live

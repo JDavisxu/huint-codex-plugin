@@ -22,8 +22,18 @@ For the smallest checkout, use sparse paths:
 codex plugin marketplace add JDavisxu/huint-codex-plugin --ref main --sparse .agents/plugins --sparse plugins/huint
 ```
 
-Then open Codex Plugins, select the Huint marketplace, install **Huint**, and
-complete OAuth when prompted.
+The marketplace marks Huint as `INSTALLED_BY_DEFAULT`, so Codex should install
+and enable the plugin from the marketplace entry. Restart Codex after adding or
+upgrading the marketplace so the bundled MCP server is loaded into the next
+session.
+
+If you are testing a local checkout or an older Codex build, install explicitly:
+
+```bash
+codex plugin add huint@huint
+```
+
+Then complete OAuth when prompted.
 
 Public setup docs live at:
 
@@ -40,6 +50,18 @@ Check my Huint MCP connection.
 ```
 
 Codex should call `get_connection_status` and return `ok: true`.
+
+You can also verify that Codex has loaded the MCP server:
+
+```bash
+codex mcp list
+```
+
+The list should include:
+
+```text
+huint  https://mcp.huint.io/mcp  enabled  OAuth
+```
 
 For OpenAI API or agent workflows that use a Huint API key directly, run the
 read-only example in `examples/openai-connection-check`.
