@@ -21,7 +21,16 @@
       "get_task_status": {
         "approval_mode": "approve"
       },
+      "get_task": {
+        "approval_mode": "approve"
+      },
+      "get_task_result": {
+        "approval_mode": "approve"
+      },
       "list_my_tasks": {
+        "approval_mode": "approve"
+      },
+      "list_tasks": {
         "approval_mode": "approve"
       },
       "list_pending_reviews": {
@@ -37,6 +46,9 @@
         "approval_mode": "prompt"
       },
       "create_task": {
+        "approval_mode": "prompt"
+      },
+      "create_photo_task": {
         "approval_mode": "prompt"
       },
       "cancel_task": {

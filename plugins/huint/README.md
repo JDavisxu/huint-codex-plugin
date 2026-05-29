@@ -49,12 +49,14 @@ Run this checklist before publishing a plugin update:
 4. `get_connection_status` returns `ok: true`.
 5. `get_capabilities` returns the expected `spec_version`.
 6. Read-only tools are available without mutation prompts.
-7. `create_task`, `cancel_task`, `accept_submission`, and `reject_submission`
-   prompt before execution.
-8. Expired/disconnected OAuth can be fixed with
+7. Image tools (`get_submission_image`, `get_submission_images`) prompt before
+   exposing tasker media.
+8. `create_task`, `create_photo_task`, `cancel_task`, `accept_submission`, and
+   `reject_submission` prompt before execution.
+9. Expired/disconnected OAuth can be fixed with
    `codex mcp login huint --scopes openid,email`, then
    `get_connection_status`.
-9. Disable/re-enable the plugin and confirm the MCP server reloads.
+10. Disable/re-enable the plugin and confirm the MCP server reloads.
 
 ## References
 

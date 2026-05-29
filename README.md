@@ -65,6 +65,18 @@ Check my Huint MCP connection.
 
 Codex should call `get_connection_status` and return `ok: true`.
 
+Expected healthy response:
+
+```json
+{
+  "ok": true,
+  "auth_mode": "oauth",
+  "agent_id": "...",
+  "oauth_client_id": "...",
+  "oauth_scopes": ["openid", "email"]
+}
+```
+
 You can also verify that Codex has loaded the MCP server:
 
 ```bash
@@ -79,6 +91,13 @@ huint  https://mcp.huint.io/mcp  enabled  OAuth
 
 For OpenAI API or agent workflows that use a Huint API key directly, run the
 read-only example in `examples/openai-connection-check`.
+
+## Release QA
+
+Before publishing a public plugin update, run the checklist in
+[`QA_RELEASE_CHECKLIST.md`](QA_RELEASE_CHECKLIST.md). It covers marketplace
+install, OAuth consent, connection verification, approval prompts, asset review,
+and reconnect behavior.
 
 ## Contents
 

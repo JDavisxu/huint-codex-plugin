@@ -1,6 +1,6 @@
 {
   "name": "huint",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Connect Codex to Huint's hosted MCP for exact-location photo task operations.",
   "author": {
     "name": "Huint",
@@ -20,7 +20,7 @@
   "interface": {
     "displayName": "Huint",
     "shortDescription": "Create and review exact-location photo tasks.",
-    "longDescription": "Connect Codex to Huint's hosted MCP server with Supabase OAuth. Verify the live connection, resolve real places, create exact-GPS photo tasks, inspect operator-scoped work, and review tasker photo submissions with prompt-gated mutation tools.",
+    "longDescription": "Connect Codex to Huint's hosted MCP server with Supabase OAuth. Verify the live connection, resolve real places, create exact-GPS photo tasks, inspect operator-scoped work, and review tasker photo submissions. Read-only tools are approved for smooth setup; private image access and money-moving mutations stay prompt-gated.",
     "developerName": "Huint",
     "category": "Productivity",
     "capabilities": [
